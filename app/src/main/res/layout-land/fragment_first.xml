@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".FirstFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="338dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="430dp" />
+
+    <Button
+        android:id="@+id/venenoP1sum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="p+"
+        android:textColorLink="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/venenoP2sum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="p+"
+        android:textColorLink="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/venenoP2res"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="p-"
+        android:textColorLink="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/venenoP1res"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="p-"
+        android:textColorLink="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/upArrow"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_keyboard_arrow_up_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/downArrow" />
+
+    <ImageButton
+        android:id="@+id/downArrow"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_keyboard_arrow_down_24"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/vidaRellena1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/baseline_favorite_24"
+        app:layout_constraintBottom_toTopOf="@+id/downArrow"
+        app:layout_constraintEnd_toEndOf="@+id/venenoP1sum"
+        app:layout_constraintStart_toStartOf="@+id/venenoP1sum"
+        app:layout_constraintTop_toBottomOf="@+id/venenoP1sum"
+        app:tint="#F60000" />
+
+    <ImageButton
+        android:id="@+id/vidaRellena2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/baseline_favorite_24"
+        app:layout_constraintBottom_toTopOf="@+id/venenoP2res"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/venenoP2sum"
+        app:layout_constraintTop_toBottomOf="@+id/upArrow"
+        app:tint="#F60000" />
+
+    <ImageButton
+        android:id="@+id/vidaVacia1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:isScrollContainer="true"
+        android:src="@drawable/baseline_favorite_border_24"
+        app:layout_constraintBottom_toTopOf="@+id/downArrow"
+        app:layout_constraintEnd_toEndOf="@+id/venenoP2sum"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/venenoP2sum"
+        app:layout_constraintTop_toBottomOf="@+id/venenoP1res"
+        app:layout_constraintVertical_bias="1.0"
+        app:tint="#FF0000" />
+
+    <ImageButton
+        android:id="@+id/vidaVacia2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/baseline_favorite_border_24"
+        app:layout_constraintBottom_toTopOf="@+id/venenoP2sum"
+        app:layout_constraintEnd_toEndOf="@+id/venenoP2res"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/upArrow"
+        app:tint="#F60000" />
+
+    <TextView
+        android:id="@+id/vidaP1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="20/0"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/downArrow"
+        app:layout_constraintEnd_toStartOf="@+id/vidaVacia1"
+        app:layout_constraintStart_toEndOf="@+id/vidaRellena1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/vidaP2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="20/0"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/vidaRellena2"
+        app:layout_constraintStart_toEndOf="@+id/vidaVacia2"
+        app:layout_constraintTop_toBottomOf="@+id/upArrow" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

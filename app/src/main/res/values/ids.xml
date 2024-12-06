@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="venenoP1res" type="id" />
+    <item name="upArrow" type="id" />
+    <item name="guideline3" type="id" />
+    <item name="venenoP1sum" type="id" />
+    <item name="venenoP2sum" type="id" />
+    <item name="guideline2" type="id" />
+    <item name="venenoP2res" type="id" />
+</resources>
